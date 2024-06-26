@@ -1,0 +1,13 @@
+CREATE TABLE `ronqui`.`endereco` (
+  `cpf` INT NOT NULL,
+  `cep` VARCHAR(45) NULL,
+  `logradouro` VARCHAR(45) NULL,
+  `complemento` VARCHAR(45) NULL,
+  `bairro` VARCHAR(45) NULL,
+  `localidade` VARCHAR(45) NULL,
+  `uf` VARCHAR(45) NULL,
+  `ibge` VARCHAR(45) NULL,
+  `gia` VARCHAR(45) NULL,
+  `ddd` VARCHAR(45) NULL,
+  `siafi` VARCHAR(45) NULL,
+  PRIMARY KEY (`cpf`));

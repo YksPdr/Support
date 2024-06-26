@@ -1,0 +1,25 @@
+package br.com.sobrinho.test2;
+
+import java.sql.Connection;
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.dao.ClientePJSobrinhoDAO;
+import br.com.sobrinho.model.ClientePJSobrinho;
+
+public class ProgramarModificarClientePJSobrinho {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = Conexao.abrirConexao();
+		ClientePJSobrinhoDAO clientePJDAO = new ClientePJSobrinhoDAO(con);
+		ClientePJSobrinho clientePJ = new ClientePJSobrinho();
+		
+		clientePJ.setCnpjSobrinho(53440323-503);
+		clientePJ.setNomeSobrinho("Luis");
+		clientePJ.setEnderecoSobrinho("Rua Futebolista");
+		clientePJ.setNomeAgenciaSobrinho("Agência Future");
+		clientePJ.setNomeGerenteSobrinho("Marcos");
+		
+		clientePJDAO.alterar(clientePJ);
+		Conexao.fecharConexao(con);
+	}
+}

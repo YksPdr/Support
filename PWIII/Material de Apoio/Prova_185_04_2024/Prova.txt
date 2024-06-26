@@ -1,0 +1,10 @@
+Criar um projeto com o seu nome e sobrenome (RafaelRonqui) se em dupla o nome dos dois RafaelKarina
+
+Em todas as classes tem que ter o nome do projeto, se errar perde 0,5 pontos em cada erro:
+
+	Exemplo: Classe Pessoa --> PessoaRafaelRonqui ou PessoaRafaelThiago
+
+Na primeira linha de cada classe tem que ter o nome do projeto:
+	Exemplo: //Rafael Ronqui
+		ou
+		//Karina Rafael

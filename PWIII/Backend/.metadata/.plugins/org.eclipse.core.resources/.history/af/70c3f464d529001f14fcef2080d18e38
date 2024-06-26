@@ -1,0 +1,21 @@
+package br.com.sobrinho.dao;
+
+import java.sql.Connection;
+
+public class ClientePFSobrinhoDAO {
+	private Connection con;
+
+	public final Connection getCon() {
+		return con;
+	}
+
+	public final void setCon(Connection con) {
+		this.con = con;
+	}
+
+	public ClientePFSobrinhoDAO(Connection con) {
+		setCon(con);
+	}
+	
+	
+}

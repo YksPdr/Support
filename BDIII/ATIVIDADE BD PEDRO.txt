@@ -1,0 +1,33 @@
+DECLARE @menorOrder float, @maiorOrder float, @agentOrder float
+
+SELECT @menorOrder = MIN(ORD_AMOUNT), @maiorOrder = MAX(ORD_AMOUNT) FROM ORDERS
+SELECT @agentOrder = ORD_AMOUNT FROM ORDERS WHERE AGENT_CODE = 'A004'
+
+DECLARE @numOrder float
+SELECT @numOrder = ORD_AMOUNT FROM ORDERS WHERE ORD_NUM = 200116
+
+IF @numOrder < @menorOrder
+--begin
+    SELECT 'Order 200116 é a menor'
+--end
+ELSE
+BEGIN
+    IF @numOrder > @maiorOrder
+--  begin
+        SELECT 'Order 20116 é a maior'
+--  end
+END
+
+IF (@menorOrder > @agentOrder) AND (@agentOrder < @maiorOrder)
+--begin
+    SELECT 'Agente A004 está dentro do limite'
+--end
+
+IF @agentOrder > @numOrder
+--begin
+    SELECT 'Agente A004 ultrapassou a venda alvo'
+--end
+ELSE
+--begin
+    SELECT 'Agente A004 não ultrapassou a venda alvo'
+--end

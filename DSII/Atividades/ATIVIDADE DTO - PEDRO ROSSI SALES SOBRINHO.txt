@@ -1,0 +1,41 @@
+O QUE É UM DTO?
+
+DTO é um padrão de projeto usado para transportar dados de um local para outra na solução. Muitas vezes esse transporte ocorre fora do processo da aplicação, se comunicando com servidor e cliente, entre servidores ou até outras partes da solução, mas também pode ser ocorrido dentro do processo.
+
+COMO FUNCIONA UM DTO?
+
+A ideia consiste basicamente em agrupar um conjunto de atributos numa classe simples de forma a otimizar a comunicação. Numa chamada remota, seria ineficiente passar cada atributo individualmente. Além disso, muitas vezes os dados usados na comunicação não refletem exatamente os atributos do seu modelo. Então, um DTO seria uma classe que provê exatamente aquilo que é necessário para um determinado processo.
+
+DTO SERVE PARA ENTRADA OU SAÍDA DE DADOS?
+
+Uma classe DTO pode ser usada tanto para entrada quanto para saída de dados, dependendo do contexto em que está sendo aplicada.
+
+No caso da ENTRADA DE DADOS, o DTO é usado para representar os dados de entrada de forma estruturada, facilitando a encapsulação e transferência de dados entre diferentes camadas da aplicação.
+
+Já na SAÍDA DE DADOS, o DTO é usado para estruturar os dados a serem enviados ou armazenados, garantindo seu envio de maneira organizada.
+
+DIFERENÇA E BENEFÍCIOS ENTRE DTO CLASSE E DTO RECORD
+
+Os DTOs criados como classe tem como diferença uma maior flexibilidade na modelagem de dados, com adição de métodos personalizados, implementação de interfaces e herança entre classes. São também mutáveis, significando que o programador seria permitido modificar seus campos após a criação do objeto. Possibilita também que você sobrescreva manualmente métodos equals e hashCode caso queira comparar instâncias de classes DTOs com base no conteúdo dos campos.
+
+Por outro lado, os DTOs records
+
+A história começou quando um relógio esquisito,
+grudou no pulso dele vindo lá do infinito,
+agora tem poderes e com eles faz bonito, é o Ben 10
+(Ben 10, Ben 10)
+
+Se acaso encontrá-lo você vai se admirar,
+diante de seus olhos ele vai se transformar,
+em um ser alienígena que bota pra quebrar, é o Ben 10
+(Ben 10, Ben 10)
+
+Com seus poderes vai combater, 
+os inimigos e vai vencer,
+ele não foge de medo ou dor,
+muleque muito irado seja aonde for.
+É O BEN 10.
+
+(música irada)
+
+Locutor: Ben 10, versão brasileira

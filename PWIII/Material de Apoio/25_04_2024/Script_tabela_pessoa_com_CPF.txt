@@ -1,0 +1,5 @@
+CREATE TABLE `ronqui`.`pessoa` (
+  `cpf` INT NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `idade` INT NULL,
+  PRIMARY KEY (`cpf`));

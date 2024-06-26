@@ -1,0 +1,46 @@
+AVALIAÇÃO BANCO DE DADOS                      PEDRO ROSSI SALES SOBRINHO
+
+CREATE PROCEDURE RetornarProductsByCategory
+	@SelectedCategory INT
+AS
+BEGIN
+	SELECT COUNT(*) FROM Products WHERE CategoryID = @SelectedCategory
+
+	IF (@SelectedCategory IS NULL) OR (NOT EXISTS(SELECT 1 FROM Products WHERE ProductID = @SelectedCategory)) OR (EXISTS ( SELECT CategoryID FROM Categories WHERE CategoryID = @SelectedCategory))
+	BEGIN
+		RAISERROR('CategoryID informado não existe', 16, 1)
+	END
+END
+
+---------------------------------------------------------------------------------------------- / / / ----------------------------------------------------------------------------------------------
+
+CREATE PROCEDURE RetornarDetalhamentoOrderById
+	@OrderInfo INT
+AS
+BEGIN
+	SELECT OD.ProductID, P.ProductName, C.CategoryName, OD.Quantity, OD.UnitPrice, OD.Discount, ((OD.Quantity*OD.UnitPrice)-OD.Discount) as Total
+	FROM [Order Details] as OD
+	INNER JOIN Products as P ON P.ProductID = OD.ProductID
+	INNER JOIN Categories as C ON C.CategoryID = P.CategoryID
+	WHERE OD.OrderID = @OrderInfo 
+	IF (@OrderInfo IS NULL) OR (EXISTS ( SELECT OrderID FROM Orders WHERE OrderID = @OrderInfo))
+	BEGIN
+		RAISERROR('O OrderID informado não existe', 16, 1)
+	END
+END
+
+---------------------------------------------------------------------------------------------- / / / ----------------------------------------------------------------------------------------------
+
+CREATE PROCEDURE RetornarDetalhamentoByCustomerId
+	@OrderInfo INT
+AS
+BEGIN
+	SELECT O.OrderID, C.CompanyName, O.OrderDate, O.RequiredDate, O.ShippedDate, O.ShipCountry
+	FROM Orders as O
+	INNER JOIN Customers as C on C.CustomerID = O.CustomerID
+	WHERE C.CustomerID = @OrderInfo
+	IF (@OrderInfo IS NULL) OR (EXISTS ( SELECT CustomerID FROM Customers WHERE CustomerID = @OrderInfo))
+	BEGIN
+		RAISERROR('O OrderID informado não existe', 16, 1)
+	END
+END

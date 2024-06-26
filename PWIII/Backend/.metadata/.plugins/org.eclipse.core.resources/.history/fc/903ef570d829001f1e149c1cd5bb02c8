@@ -1,0 +1,32 @@
+package br.com.sobrinho.model;
+
+public class ClienteBancoSobrinho {
+	private String nomeSobrinho;
+	private String endereco;
+	private String nomeAgenciaSobrinho;
+	private String nomeSobrinhoGerente;
+	public String getNomeSobrinho() {
+		return nomeSobrinho;
+	}
+	public void setNomeSobrinho(String nomeSobrinho) {
+		this.nomeSobrinho = nomeSobrinho;
+	}
+	public String getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	public String getNomeSobrinhoAgencia() {
+		return nomeAgenciaSobrinho;
+	}
+	public void setNomeSobrinhoAgencia(String nomeSobrinhoAgencia) {
+		this.nomeAgenciaSobrinho = nomeSobrinhoAgencia;
+	}
+	public String getNomeSobrinhoGerente() {
+		return nomeSobrinhoGerente;
+	}
+	public void setNomeSobrinhoGerente(String nomeSobrinhoGerente) {
+		this.nomeSobrinhoGerente = nomeSobrinhoGerente;
+	}
+}

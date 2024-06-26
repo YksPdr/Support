@@ -1,0 +1,20 @@
+package br.com.sobrinho.test2;
+
+import java.sql.Connection;
+
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.dao.ClientePJSobrinhoDAO;
+
+public class ProgramarDeletarClientePJSobrinho {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = Conexao.abrirConexao();
+		
+		ClientePJSobrinhoDAO clientePJDAO = new ClientePJSobrinhoDAO(con);
+		
+		clientePJDAO.deletar();
+		Conexao.fecharConexao(con);
+	}
+
+}

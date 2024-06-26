@@ -1,0 +1,10 @@
+DECLARE @qtdadealunos int, @contador int = 1
+
+SELECT @qtdadealunos = MAX(RM) FROM alunos
+
+WHILE @contador < @qtdadealunos
+BEGIN
+	SELECT alunos.nome, alunos.RM, cursos.descricao FROM alunos WHERE RM = @contador
+    SELECT @contador;
+	SELECT @contador = @contador + 1;
+END

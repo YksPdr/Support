@@ -1,0 +1,13 @@
+package br.com.sobrinho.model;
+
+public class ClientePFSobrinho extends ClienteBancoSobrinho {
+	private String cpfSobrinho;
+
+	public String getCpfSobrinho() {
+		return cpfSobrinho;
+	}
+
+	public void setCpfSobrinho(String cpfSobrinho) {
+		this.cpfSobrinho = cpfSobrinho;
+	}
+}

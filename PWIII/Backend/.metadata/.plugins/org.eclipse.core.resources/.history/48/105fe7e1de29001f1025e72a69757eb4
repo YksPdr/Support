@@ -1,0 +1,27 @@
+package br.com.sobrinho.test;
+
+import java.sql.Connection;
+import javax.swing.JOptionPane;
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.dao.ClientePFSobrinhoDAO;
+import br.com.sobrinho.model.ClientePFSobrinho;
+
+public class ProgramarModificarClientePFSobrinho {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = Conexao.abrirConexao();
+		
+		ClientePFSobrinhoDAO clientePFDAO = new ClientePFSobrinhoDAO(con);
+		ClientePFSobrinho clientePF = new ClientePFSobrinho();
+		
+		clientePF.setCpfSobrinho(40028922694201);
+		clientePF.setNomeSobrinho("Roberto");
+		clientePF.setEnderecoSobrinho(JOptionPane.showInputDialog("Rua dos Loucos");
+		clientePF.setNomeAgenciaSobrinho(JOptionPane.showInputDialog("Digite o CPF do cliente:"));
+		clientePF.setNomeGerenteSobrinho(JOptionPane.showInputDialog("Digite o CPF do cliente:"));
+		
+		clientePFDAO.alterar(clientePF);
+		Conexao.fecharConexao(con);
+	}
+}

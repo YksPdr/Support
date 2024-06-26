@@ -1,0 +1,26 @@
+package br.com.sobrinho.test2;
+
+import java.sql.Connection;
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.dao.ClientePFSobrinhoDAO;
+import br.com.sobrinho.model.ClientePFSobrinho;
+
+public class ProgramarModificarClientePJSobrinho {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Connection con = Conexao.abrirConexao();
+		
+		ClientePFSobrinhoDAO clientePJDAO = new ClientePFSobrinhoDAO(con);
+		ClientePFSobrinho clientePJ = new ClientePFSobrinho();
+		
+		clientePJ.setCpfSobrinho(589900323-503);
+		clientePJ.setNomeSobrinho("Roberto");
+		clientePJ.setEnderecoSobrinho("Rua dos Loucos");
+		clientePJ.setNomeAgenciaSobrinho("Agência do Seu Jorge");
+		clientePJ.setNomeGerenteSobrinho("Ronaldo");
+		
+		clientePJDAO.alterar(clientePJ);
+		Conexao.fecharConexao(con);
+	}
+}

@@ -1,0 +1,78 @@
+package br.com.sobrinho.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import br.com.sobrinho.model.ClientePFSobrinho;
+
+public class ClientePFSobrinhoDAO {
+	private Connection con;
+
+	public final Connection getCon() {
+		return con;
+	}
+
+	public final void setCon(Connection con) {
+		this.con = con;
+	}
+
+	public ClientePFSobrinhoDAO(Connection con) {
+		setCon(con);
+	}
+	
+	public String inserir(ClientePFSobrinho clientePF) {
+		String sql = "insert into ClientePFSobrinho(cpf, nome, endereco, nomeAgencia, nomeGerente) values (?, ?, ?, ?, ?)";
+		try {
+			PreparedStatement ps = getCon().prepareStatement(sql);
+			ps.setString(1, clientePF.getCpfSobrinho());
+			ps.setString(2, clientePF.getNomeSobrinho());
+			ps.setString(3, clientePF.getEnderecoSobrinho());
+			ps.setString(4, clientePF.getNomeAgenciaSobrinho());
+			ps.setString(5, clientePF.getNomeGerenteSobrinho());
+			
+			if (ps.executeUpdate() > 0) {
+				return "Inserido com sucesso.";
+			} else {
+				return "Erro ao inserir.";
+			}
+		} catch (SQLException e) {
+			return e.getMessage();
+		}
+	}
+	
+	public String deletar() {
+		String sql = "delete from ClientePFSobrinho";
+		try {
+			PreparedStatement ps = getCon().prepareStatement(sql);
+					
+			if (ps.executeUpdate() > 0) {
+				return "Deletado com sucesso.";
+			} else {
+				return "Erro ao deletar.";
+			}
+		} catch (SQLException e) {
+			return e.getMessage();
+		}
+	}
+	
+	public String alterarTipoTecido(ClientePFSobrinho clientePFSobrinho) {
+		String sql = "update clientePF set tipotecido = (?) where tipo = (?)";
+		try {
+			PreparedStatement ps = getCon().prepareStatement(sql);
+			
+			ps.setString(1, clientePFSobrinho.getCpfSobrinho());
+			ps.setString(2, clientePFSobrinho.getNomeSobrinho());
+			ps.setString(3, clientePFSobrinho.getEnderecoSobrinho());
+			ps.setString(4, clientePFSobrinho.getNomeSobrinho());
+			ps.setString(5, clientePFSobrinho.getNomeSobrinho());
+			
+			if (ps.executeUpdate() > 0) {
+				return "Alterado com sucesso";
+			} else {
+				return "Erro ao alterar";
+			}
+		} catch (SQLException e) {
+			return e.getMessage();
+		}
+	}
+}

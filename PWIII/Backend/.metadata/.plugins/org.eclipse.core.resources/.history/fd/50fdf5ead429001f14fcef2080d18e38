@@ -1,0 +1,6 @@
+package br.com.sobrinho.dao;
+
+public class ClientePFSobrinhoDAO {
+	private Connection con;
+	
+}

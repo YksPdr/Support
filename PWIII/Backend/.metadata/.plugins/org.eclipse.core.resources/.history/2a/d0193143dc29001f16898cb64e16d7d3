@@ -1,0 +1,24 @@
+package br.com.sobrinho.test;
+
+import java.sql.Connection;
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.dao.ClientePFSobrinhoDAO;
+import br.com.sobrinho.model.ClientePFSobrinho;
+
+public class ProgramarInserirClientePFSobrinho {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = Conexao.abrirConexao();
+		
+		ClientePFSobrinho clientePF = new ClientePFSobrinho();
+		ClientePFSobrinhoDAO clientePFDAO = new ClientePFSobrinhoDAO(con);
+		
+		blusa.setPeso(400);
+		blusa.setTipoTecido("Jeans");
+		blusa.setTouca("Sim");
+	
+		blusadao.inserirBlusa(blusa);
+		Conexao.fecharConexao(con);
+	}
+}

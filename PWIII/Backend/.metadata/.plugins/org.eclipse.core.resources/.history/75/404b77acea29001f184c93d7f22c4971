@@ -1,0 +1,43 @@
+package br.com.sobrinho.test;
+
+import java.io.IOException;
+import java.sql.Connection;
+import javax.swing.JOptionPane;
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.dao.ClientePFSobrinhoDAO;
+import br.com.sobrinho.model.ClientePFSobrinho;
+
+
+public class TesteSobrinho {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = Conexao.abrirConexao();
+		ClientePFSobrinhoDAO clientePFDAO = new ClientePFSobrinhoDAO(con);
+		ClientePFSobrinho clientePF = new ClientePFSobrinho();
+		
+		int cpf = Integer.parseInt(JOptionPane.showInputDialog("Digite o CPF"));
+		try {
+			//Endereco endereco = viacepservice.getEndereco("01538001");
+			int recebeCPF = clientePF.getCpfSobrinho();
+			String recebeNome = clientePF.getNomeSobrinho();
+			String recebeEndereco = clientePF.getEnderecoSobrinho();
+			String recebeNomeAgencia = clientePF.getNomeAgenciaSobrinho();
+			String recebeNomeGerente = clientePF.getNomeGerenteSobrinho();
+			
+			System.out.println("Os dados relacionados ao seu CEP são: \n" +
+				recebeCPF + "\n" +	
+				recebeNome + "\n" +
+				recebeEndereco + "\n" +
+				recebeNomeAgencia + "\n" +
+				recebeNomeGerente + "\n"
+					);
+			
+			System.out.println(enderecodao.inserir(clientePF, cpf));
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,8 @@
+package br.com.sobrinho.dao;
+
+import java.sql.Connection;
+
+public class ClientePFSobrinhoDAO {
+	private Connection con;
+	
+}

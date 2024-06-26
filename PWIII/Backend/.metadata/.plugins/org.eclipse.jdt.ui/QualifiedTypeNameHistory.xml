@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="br.com.fiap.banco.factory.Conexao"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.ClienteSobrinho"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.FuncionarioSobrinho"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.PessoaSobrinho"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.MaterialSobrinho"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.AtivoSobrinho"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.MaterialVendaSobrinho"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.conexao.Conexao"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.dao.ClientePFSobrinhoDAO"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.ClientePFSobrinho"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.dao.ClientePJSobrinhoDAO"/>
+    <fullyQualifiedTypeName name="br.com.sobrinho.model.ClientePJSobrinho"/>
+</qualifiedTypeNameHistroy>

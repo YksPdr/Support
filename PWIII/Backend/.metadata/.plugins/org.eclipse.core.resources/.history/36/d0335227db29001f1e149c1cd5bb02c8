@@ -1,0 +1,53 @@
+package br.com.sobrinho.test;
+
+import java.io.IOException;
+import java.sql.Connection;
+import javax.swing.JOptionPane;
+import br.com.sobrinho.dao.ClientePFSobrinhoDAO;
+import br.com.sobrinho.model.ClientePFSobrinho;
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.service.ViacepService;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		Connection con = Conexao.abrirConexao();
+		ClientePFSobrinhoDAO clientePFDAO = new ClientePFSobrinhoDAO(con);
+		ViacepService viacepservice = new ViacepService();
+		
+		int cpf = Integer.parseInt(JOptionPane.showInputDialog("Digite o CPF"));
+		
+		try {
+			//Endereco endereco = viacepservice.getEndereco("01538001");
+			ClientePFSobrinho clientePF = viacepservice.getClientePFSobrinho(JOptionPane.showInputDialog("Digite o CEP"));
+			
+			String recebeCpf = clientePF.getCpfSobrinho();
+			String recebeLogradouro = clientePF.getNomeSobrinho();
+			String recebeComplemento = clientePF.getEnderecoSobrinho();
+			String recebeBairro = clientePF.getNomeAgenciaSobrinho();
+			String recebeLocalidade = clientePF.getNomeGerenteSobrinho();
+			
+			System.out.println("Os dados relacionados ao seu CEP são: \n" +
+				recebeCep + "\n" +	
+				recebeLogradouro + "\n" +
+				recebeComplemento + "\n" +
+				recebeBairro + "\n" +
+				recebeLocalidade + "\n" +
+				recebeUf + "\n" +
+				recebeIbge + "\n" +
+				recebeGia + "\n" +
+				recebeDdd + "\n" +
+				recebeSiafi + "\n"
+					);
+			
+			System.out.println(enderecodao.inserir(endereco, cpf));
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

@@ -1,0 +1,23 @@
+package br.com.sobrinho.test;
+
+import java.sql.Connection;
+import br.com.sobrinho.conexao.Conexao;
+import br.com.sobrinho.dao.ClientePFSobrinhoDAO;
+
+public class ProgramarModificarClientePFSobrinho {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = Conexao.abrirConexao();
+		
+		ClientePFSobrinhoDAO clientePDDAO = new CalcaDAO(con);
+		Calca calca = new Calca();
+		
+		calca.setTipoTecido("Jeans");
+		calca.setTipo("Festa");
+		
+		calcadao.alterarTipoTecido(calca);
+		Conexao.fecharConexao(con);
+	}
+
+}

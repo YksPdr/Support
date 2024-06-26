@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\3DS - Pedro\PWIII\Teste\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3138943792.index
+2690602365.index
+1635202174.index
+1498499347.index
+4102976605.index
+2559737551.index

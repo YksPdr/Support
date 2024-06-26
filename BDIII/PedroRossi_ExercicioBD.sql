@@ -1,0 +1,10 @@
+CREATE PROCEDURE Alunos.spGetAllMaterias
+   AS
+	BEGIN
+		IF (@aluno = @valido)
+		    AVG(MENCAO), MAX(MENCAO), COUNT(*) FROM MENCOES 
+			WHERE RM = @aluno
+			GROUP BY Materia M.SIGLA + M.NOME, T.MEDIA, T.MAIOR, T.MENOR, T.QTDE FROM #TEMP T MATERIA M
+    	END
+	END
+  GO   

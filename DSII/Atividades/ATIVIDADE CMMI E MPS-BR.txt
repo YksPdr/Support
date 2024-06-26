@@ -1,0 +1,113 @@
+ATIVIDADE CMMI E MPS-BR
+
+----------------------------------------------------  / / /  ----------------------------------------------------
+
+	O CMMI (Capability Maturity Model Integration) foi criado pelo SEI (Software Engineering Institute), o qual é um órgão integrante da universidade norte-americana Carnegie Mellon. Possuindo um enfoque voltado para a capacidade de maturidade de processos de software.
+O MPS-BR (Melhoria do Processo de Software Brasileiro) é uma metodologia voltada à área de desenvolvimento de sistemas e que foi criada por um conjunto de organizações ligadas ao desenvolvimento de software.
+
+
+Semelhanças:
+
+- Ambos os modelos visam melhorar os processos de desenvolvimento de software. Eles fornecem um conjunto de práticas e diretrizes para organizações melhorarem seus processos de desenvolvimento de software.
+- Também adotam uma abordagem gradual para a melhoria do processo. Definindo diferentes níveis de maturidade ou capacidade que uma organização pode atingir ao implementar as práticas recomendadas.
+- Ambos os modelos baseiam-se em boas práticas reconhecidas na indústria de desenvolvimento de software. Eles oferecem um conjunto de diretrizes que podem ajudar as organizações a melhorarem sua eficiência, qualidade e previsibilidade.
+
+
+Diferenças:
+
+- O CMMI é desenvolvido pelo Instituto de Engenharia de Software (SEI) nos Estados Unidos e é amplamente reconhecido internacionalmente. Por outro lado, o MPS-BR é um modelo brasileiro desenvolvido especificamente para atender às necessidades das organizações de software no Brasil, embora também esteja ganhando reconhecimento em outros países.
+- O CMMI é um modelo mais abrangente que não se limita apenas ao desenvolvimento de software, mas também aborda a engenharia de sistemas, serviços e outras áreas. O MPS-BR, por outro lado, é focado especificamente na melhoria de processos de desenvolvimento de software.
+- O CMMI define cinco níveis de maturidade: Inicial, Gerenciado, Definido, Quantitativamente Gerenciado e Otimizado. Cada nível representa um estágio de maturidade crescente na implementação de práticas de processo. O MPS-BR, por sua vez, possui sete níveis de maturidade: A, B, C, D, E, F e G.
+
+----------------------------------------------------  / / /  ----------------------------------------------------
+
+Benefícios e Desafios de Implementação
+
+CMMI
+
+- O CMMI fornece uma estrutura para a melhoria contínua dos processos de desenvolvimento de software, permitindo que as organizações avancem em direção à excelência.
+- Ajuda na padronização de processos, o que pode levar a uma maior consistência e qualidade nos produtos de software.
+- Ao implementar práticas recomendadas pelo CMMI, as organizações podem aumentar sua eficiência operacional, reduzir custos e prazos de entrega.
+- A melhoria dos processos de desenvolvimento de software pode tornar as organizações mais competitivas no mercado, aumentando a satisfação do cliente e a reputação da empresa.
+
+	O CMMI é geralmente mais exigente em termos de requisitos de implementação, especialmente nos níveis mais altos de maturidade. Ele requer uma abordagem mais formal e documentada para a gestão de processos.
+
+
+MPS-BR
+
+- O MPS-BR foi desenvolvido especificamente para atender às necessidades do setor de software no Brasil, levando em consideração as características locais e culturais.
+- Por ser desenvolvido localmente, o MPS-BR pode ser mais acessível e relevante para empresas brasileiras, especialmente aquelas de menor porte.
+- O MPS-BR oferece uma estrutura flexível que pode ser adaptada às diferentes realidades e tamanhos de empresas, permitindo uma implementação mais gradual e adaptada às necessidades específicas de cada organização.
+- Embora seja focado no mercado brasileiro, o MPS-BR também está ganhando reconhecimento internacional, o que pode beneficiar as empresas brasileiras que desejam competir globalmente.
+
+	O MPS-BR, embora também exija a implementação de práticas específicas, pode ser mais flexível e adaptável, especialmente para organizações menores.
+
+----------------------------------------------------  / / /  ----------------------------------------------------
+
+Exemplos de Efetividade de CMMI e MPS-BR em Empresas
+
+CMMI
+
+Empresa: Lockheed Martin
+Setor: Aeroespacial e Defesa
+
+Resultados:
+
+- A implementação do CMMI ajudou a Lockheed Martin a melhorar a qualidade de seus produtos de software, reduzindo defeitos e aumentando a satisfação do cliente.
+- A empresa conseguiu reduzir custos e prazos de entrega, tornando-se mais competitiva no mercado.
+- A padronização de processos levou a uma maior eficiência operacional em toda a organização, resultando em menos retrabalho e desperdício de recursos.
+- A adoção do CMMI pela Lockheed Martin não apenas beneficiou a empresa, mas também a posicionou como uma líder de mercado reconhecida por seus altos padrões de qualidade e excelência em engenharia de software.
+
+
+MPS-BR
+
+Empresa: Megawork Solutions
+Setor: Tecnologia da Informação
+
+Resultados:
+
+- A implementação do MPS.BR ajudou a Megawork Solutions a estabelecer processos mais eficientes para gerenciar seus projetos.
+- Com processos mais estruturados e padronizados, a qualidade dos serviços prestados pela Megawork Solutions aumentou.
+- A empresa conseguiu aumentar sua produtividade ao eliminar atividades desnecessárias e otimizar seus processos de trabalho.
+- Ao evitar retrabalho e melhorar a eficiência dos seus processos, a Megawork conseguiu reduzir seus custos operacionais.
+- Com uma reputação de entregas pontuais e serviços de alta qualidade, a Megawork Solutions fortaleceu sua posição no mercado de consultoria em tecnologia da informação.
+
+----------------------------------------------------  / / /  ----------------------------------------------------
+
+Comparando a Adoção de CMMI VS MPS-BR
+
+Comparação Global:
+
+Abrangência Internacional:
+- O CMMI é reconhecido internacionalmente e amplamente adotado por organizações em todo o mundo. Ele oferece um modelo abrangente que pode ser aplicado em diversos setores e tipos de empresas.
+- Embora o MPS.BR tenha origem brasileira, ele tem sido cada vez mais reconhecido internacionalmente como uma alternativa viável para a melhoria de processos de software. No entanto, sua adoção ainda é mais comum em empresas brasileiras e latino-americanas.
+
+Maturidade e Escalabilidade:
+- O CMMI oferece um modelo de maturidade escalável, que permite às organizações progredirem de forma incremental em direção a níveis mais altos de maturidade. Ele é flexível o suficiente para ser adaptado às necessidades específicas de diferentes organizações.
+- O MPS.BR também oferece um modelo de maturidade, mas é mais direcionado para pequenas e médias empresas, especialmente no contexto brasileiro. Ele fornece uma abordagem estruturada e acessível para melhorar os processos de desenvolvimento de software, com foco em resultados práticos e de curto prazo.
+
+
+Comparação Local:
+
+Alinhamento com Requisitos e Normas Locais:
+- O CMMI é amplamente reconhecido em nível global e pode ser preferido por empresas que buscam alinhamento com padrões internacionais e requisitos de mercado global.
+- No contexto brasileiro e latino-americano, o MPS.BR pode ser escolhido devido ao seu alinhamento com as normas e requisitos locais, bem como sua adaptação às características específicas das empresas na região.
+
+Custos e Complexidade:
+- Implementar o CMMI pode ser mais caro e complexo, especialmente para empresas de menor porte ou com recursos limitados. A complexidade do modelo e a necessidade de consultoria especializada podem representar desafios adicionais.
+- O MPS.BR é geralmente considerado mais acessível e menos complexo em comparação com o CMMI. Ele foi projetado para ser implementado de forma mais simples e econômica, tornando-o uma escolha atraente para empresas com recursos limitados.
+
+----------------------------------------------------  / / /  ----------------------------------------------------
+
+Tendências
+
+	As tendências emergentes na melhoria de processos de software refletem a evolução do cenário tecnológico, as demandas do mercado e as necessidades das organizações. Tanto o CMMI quanto o MPS.BR estão evoluindo para atender a essas demandas de diversas maneiras.  Ambos estão acompanhando as tendências emergentes na melhoria de processos de software, incorporando conceitos ágeis, automação, UX, sustentabilidade, ética e flexibilidade em seus modelos para atender às demandas do mercado e ajudar as organizações a alcançarem excelência em seus processos de desenvolvimento de software. Alguns exemplos são:
+
+- Uma tendência significativa é a integração de práticas ágeis e DevOps na melhoria de processos de software. As empresas estão buscando abordagens mais ágeis e colaborativas para o desenvolvimento de software, visando entregas mais rápidas e feedback contínuo dos clientes.
+- Com o avanço da automação e da inteligência artificial, as organizações estão buscando maneiras de automatizar processos repetitivos e tomar decisões baseadas em dados.
+- As empresas estão buscando abordagens mais flexíveis e personalizadas para a melhoria de processos de software, que possam ser adaptadas às suas necessidades específicas e contextos organizacionais.
+
+
+
+
+

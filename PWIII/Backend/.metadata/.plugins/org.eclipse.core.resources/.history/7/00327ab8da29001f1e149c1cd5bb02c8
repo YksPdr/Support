@@ -1,0 +1,8 @@
+package br.com.sobrinho.test;
+
+public class Snippet {
+	public static void main(String[] args) {
+		CloseableHttpClient
+	}
+}
+

@@ -1,0 +1,13 @@
+package br.com.sobrinho.model;
+
+public class ClientePJSobrinho extends ClienteBancoSobrinho{
+	private String cnpjSobrinho;
+
+	public String getCnpjSobrinho() {
+		return cnpjSobrinho;
+	}
+
+	public void setCnpjSobrinho(String cnpjSobrinho) {
+		this.cnpjSobrinho = cnpjSobrinho;
+	}
+}
